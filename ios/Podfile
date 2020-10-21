@@ -10,6 +10,8 @@ target 'Test1' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'EXDevMenuInterface', path: '../node_modules/expo-dev-menu-interface'
+
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and

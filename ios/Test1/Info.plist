@@ -55,5 +55,9 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Test1 to use the camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow Test1 to access your microphone</string>
 </dict>
 </plist>
