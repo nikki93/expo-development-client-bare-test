@@ -3535,10 +3535,10 @@ expo-constants@~9.2.0:
     fbjs "1.0.0"
     uuid "^3.3.2"
 
-expo-dev-menu-interface@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-0.0.1.tgz#b5df882b398d144646abe738b46cd11017ed7cef"
-  integrity sha512-btNDfDvz0m/33BagEgzFIBxg4PDZRBXij7SFB6XUPK2WeyMDtmB0xUTnFto+Zuf3VCAdhJE1vfwx6+qAwm469g==
+expo-dev-menu-interface@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-0.0.2.tgz#eec294d0bade5d63e11bbf54d748796ad3d23e5d"
+  integrity sha512-SSwgNDx1OzzO2le1dCGYgeo5tfjV0HTwnhW4FfOjTZmHT/rg4toWI2hIWncdyZg2oh6/mQQulhVT3Xv/CQYbuw==
 
 expo-development-client@^0.0.6:
   version "0.0.6"
@@ -3601,7 +3601,7 @@ expo-permissions@~9.3.0:
   resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-9.3.0.tgz#b90c7e9e411d306c1c7ba2bae18d5c53c201affd"
   integrity sha512-ylSJZVvEGJVFTKsFrUL2S6gCvFt+/o8TJ3xT4WaMjHe2/2Z7R8ng6NR47Kt54t7XBIV/SZ7DIY9uRiR7TPuNYA==
 
-expo-splash-screen@^0.6.1, expo-splash-screen@~0.6.2:
+expo-splash-screen@^0.6.1:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.6.2.tgz#2be7fc28ad62549e870c69f1fe133ebe756c524f"
   integrity sha512-Rvi+aiVDztFyLh5fYJYcZxVuQNDCy6ATSTfxuch5uVQ1jA9/vjVzUKG4iZCoChaSCnMV56aFftHBWSDNWPvLFQ==
