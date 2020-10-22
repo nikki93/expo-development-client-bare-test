@@ -9,4 +9,7 @@ applyNativeModulesSettingsGradle(settings)
 include(":expo-dev-menu-interface")
 project(":expo-dev-menu-interface").projectDir = new File("../node_modules/expo-dev-menu-interface/android")
 
+include(":expo-dev-menu")
+project(":expo-dev-menu").projectDir = new File("../node_modules/expo-dev-menu/android")
+
 include ':app'

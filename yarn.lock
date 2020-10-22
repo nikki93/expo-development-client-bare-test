@@ -3540,6 +3540,13 @@ expo-dev-menu-interface@0.0.2:
   resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-0.0.2.tgz#eec294d0bade5d63e11bbf54d748796ad3d23e5d"
   integrity sha512-SSwgNDx1OzzO2le1dCGYgeo5tfjV0HTwnhW4FfOjTZmHT/rg4toWI2hIWncdyZg2oh6/mQQulhVT3Xv/CQYbuw==
 
+expo-dev-menu@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-0.0.2.tgz#69d3604a8baad633e61ca01ebdd72c8cd5f00849"
+  integrity sha512-a75AI+lZxn6MuO/xtsHpy1Yh9wPVyCJHYaSNS91FpH8jenbEn+n+L4wQvsnVDiOhoZSnaBYIPhy1dlPmskMqxQ==
+  dependencies:
+    expo-dev-menu-interface "0.0.2"
+
 expo-development-client@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/expo-development-client/-/expo-development-client-0.0.6.tgz#113c163c63eb99bfacdc1b6f675ce169aa46540f"

@@ -199,6 +199,9 @@ dependencies {
     }
     addUnimodulesDependencies()
 
+    implementation project(":expo-dev-menu-interface")
+    implementation project(":expo-dev-menu")
+
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
         debugImplementation files(hermesPath + "hermes-debug.aar")
