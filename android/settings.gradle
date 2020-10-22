@@ -6,4 +6,7 @@ includeUnimodulesProjects()
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
 applyNativeModulesSettingsGradle(settings)
 
+include(":expo-dev-menu-interface")
+project(":expo-dev-menu-interface").projectDir = new File("../node_modules/expo-dev-menu-interface/android")
+
 include ':app'
