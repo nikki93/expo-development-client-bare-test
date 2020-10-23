@@ -3,6 +3,7 @@ package com.test1;
 import android.app.Application;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -55,7 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected @Nullable String getJSBundleFile() {
       if (BuildConfig.DEBUG) {
-        return DevelopmentClientController.getInstance().getJSBundleFile();
+        return super.getJSBundleFile();
       } else {
         return UpdatesController.getInstance().getLaunchAssetFile();
       }
@@ -73,7 +74,11 @@ public class MainApplication extends Application implements ReactApplication {
 
   @Override
   public ReactNativeHost getReactNativeHost() {
-    return mReactNativeHost;
+    if (BuildConfig.DEBUG) {
+      return DevelopmentClientController.getInstance().getReactNativeHost();
+    } else {
+      return mReactNativeHost;
+    }
   }
 
   @Override
@@ -82,7 +87,7 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
 
     if (BuildConfig.DEBUG) {
-      DevelopmentClientController.initialize(this);
+      DevelopmentClientController.initialize(this, mReactNativeHost);
     } else {
       UpdatesController.initialize(this);
     }

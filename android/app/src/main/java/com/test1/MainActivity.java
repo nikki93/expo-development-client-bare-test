@@ -7,6 +7,7 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
+import expo.modules.developmentclient.DevelopmentClientController;
 import expo.modules.devmenu.react.DevMenuAwareReactActivity;
 import expo.modules.splashscreen.singletons.SplashScreen;
 import expo.modules.splashscreen.SplashScreenImageResizeMode;
@@ -35,7 +36,11 @@ public class MainActivity extends DevMenuAwareReactActivity {
         return new ReactActivityDelegate(this, getMainComponentName()) {
             @Override
             protected ReactRootView createRootView() {
-                return new RNGestureHandlerEnabledRootView(MainActivity.this);
+                ReactRootView view = new RNGestureHandlerEnabledRootView(MainActivity.this);
+                if (BuildConfig.DEBUG) {
+                  DevelopmentClientController.getInstance().setRootView(view);
+                }
+                return view;
             }
         };
     }
